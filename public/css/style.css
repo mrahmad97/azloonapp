@@ -1,0 +1,694 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 400; /* Default weight */
+    font-style: normal; /* Default style */
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    color: #000;
+    line-height: 1.6;
+}
+
+/* General Navbar Styles */
+.navbar {
+  background-color: #000;
+  color: #fff;
+}
+.navbar .navbar-brand {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff !important;
+}
+.navbar .nav-link {
+  color: #fff !important;
+}
+
+/* Toggler Button */
+.navbar-toggler {
+  border-color: #fff;
+}
+
+/* Login and Cart Icons */
+.navbar .bi-person,
+.navbar .bi-cart {
+  font-size: 18px;
+  color: #fff;
+}
+.navbar .badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  color: #000;
+}
+
+/* Second Navbar Links */
+.navbar-nav {
+  margin-top: 10px;
+}
+.navbar-nav .nav-link {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 500;
+}
+.navbar-nav .nav-link:hover {
+  color: #ddd;
+}
+
+/* Search Box */
+.search-box {
+  position: relative;
+  margin-top: 10px;
+}
+.search-box input {
+  width: 100%;
+  height: 35px;
+  padding-right: 40px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+}
+.search-box .search-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: #fff;
+  background-color: #b40000;
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+}
+
+/* Mobile View Styles */
+@media (max-width: 768px) {
+  /* Toggler Button First, Brand Second */
+  .navbar-toggler {
+    order: 1;
+  }
+  .navbar-brand {
+    order: 2;
+    margin: 0 auto; /* Center the brand */
+  }
+  .navbar .d-flex {
+    order: 3;
+  }
+
+  /* Second Navbar (Links) */
+  .navbar-nav {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  /* Search Box in a Separate Line */
+  .search-box {
+    order: 5;
+    width: 100%;
+  }
+}
+
+.search-bar {
+    margin-top: 10px;
+}
+.search-input {
+    width: 100%;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+#mobile-navbar .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar {
+    background-color: #000;
+    color: #fff;
+    margin-bottom: -30px; /* Adjusted to reduce space */
+    padding-bottom: -30px; /* Adjusted to reduce space */
+}
+.navbar .navbar-brand {
+    height: 44px;
+    top: 28px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43.57px;
+}
+.navbar .navbar-brand, .navbar .nav-link {
+    color: #fff;
+}
+.navbar .nav-link:hover {
+    color: #ddd;
+}
+.search-box {
+    position: relative;
+    width: 50%;
+    height: 40px;
+}
+.search-box input {
+    margin-top: 5px;
+    height: 30px;
+    border-radius: 50px;
+    padding-right: 20px; /* To create space for the icon */
+}
+.search-box .form-control {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24.3px;
+}
+.search-box .search-icon {
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+    background-color: #b40000;
+    color: #ffffff;
+    height: 30px;
+    width: 60px;
+    border-radius: 20px;
+    padding: 2.5px 20px 6px 25px;
+}
+.nav-item .bi-person {
+    font-size: 1.8rem; /* Example: Makes the icon larger */
+}
+.nav-item .bi-cart {
+    font-size: 1.5rem; /* Example: Makes the icon larger */
+}
+.cart-icon {
+    position: relative;
+}
+.cart-icon-1 .badge {
+    position: absolute;
+    top: 22px;
+    right: 108px;
+    background-color: #fff;
+    color: #000;
+}
+.nav-item .nav-link {
+    font-weight: 400;
+    font-size: 11px;
+}
+.welcome-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.welcome-container span {
+    font-size: 11px;
+}
+.icon {
+    margin-right: 8px; /* Space between the icon and text */
+    font-size: 13px;   /* Adjust icon size */
+}
+.nav-link {
+    color: #fff !important;
+}
+.bi-list{
+    font-size: 15px;
+}
+.nav-link {
+    color: #fff !important;
+  }
+  .nav-item.dropdown:hover .dropdown-menu {
+    display: block; /* Show dropdown on hover */
+}
+
+  .dropdown-item {
+    color: black;
+
+  }
+
+  .dropdown-item:hover {
+    background-color: #d8d8d8; /* Highlight color on hover */
+  }
+
+  .bottom-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000;
+    padding: 10px 0;
+}
+
+.bottom-nav .col-md-4,
+.bottom-nav .col-md-8 {
+    display: flex;
+    align-items: center;
+}
+
+.bottom-nav .nav-item .nav-link {
+    font-weight: 500;
+    color: #fff !important;
+}
+
+.bottom-nav .nav-link:hover {
+    color: #d50000; /* Red hover */
+}
+
+.bottom-nav .dropdown-toggle {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .bottom-nav {
+        flex-wrap: wrap;
+    }
+    .bottom-nav .col-md-4,
+    .bottom-nav .col-md-8 {
+        justify-content: center; /* Center items in mobile view */
+    }
+}
+
+
+.dropdown-toggle {
+    cursor: pointer;
+    color: #fff !important;
+}
+
+.dropdown-menu {
+    margin-top: 0; /* Adjust margin if needed */
+    display: none;
+    min-width: 150px; /* Optional for consistent dropdown width */
+}
+
+
+/* Mobile-specific CSS */
+@media (max-width: 768px) {
+    /* Center the Navbar Brand in mobile view */
+    .navbar .navbar-brand {
+        text-align: center;
+        margin: 0 auto; /* Center horizontally */
+        font-size: 24px; /* Adjust brand size for mobile */
+    }
+
+    /* Move the navbar-toggler button to the right side */
+    .navbar-toggler {
+        position: absolute;
+        right: 20px;
+        top: 15px;
+    }
+
+    /* Move the search box to the top in mobile */
+    .search-box {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        left: 0;
+        padding: 10px;
+        background-color: #000;
+    }
+
+    /* Adjust the search input box for mobile */
+    .search-box input {
+        width: 100%;
+        height: 35px;
+        padding-left: 15px;
+        padding-right: 45px; /* Provide space for the icon */
+        border-radius: 20px;
+    }
+
+    .search-box .search-icon {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        background-color: #b40000;
+        color: #ffffff;
+        height: 30px;
+        width: 40px;
+        border-radius: 20px;
+        padding: 2px 15px;
+    }
+
+    /* Bottom navbar: Align all items in one line for mobile */
+    .bottom-nav {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+
+    .bottom-nav .col-md-3,
+    .bottom-nav .col-md-6 {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    /* Align dropdown and other items in a single line */
+    .bottom-nav .nav-item {
+        margin-right: 15px;
+    }
+
+    .bottom-nav .dropdown-toggle {
+        font-size: 14px;
+        margin-right: 15px;
+    }
+
+    /* Adjust the footer for better mobile view */
+    .footer {
+        padding: 10px;
+    }
+
+    /* Fixing navbar items that overflow */
+    .navbar-nav {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .navbar-nav .nav-item {
+        font-size: 12px;
+    }
+}
+
+
+.carousel-inner img {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+}
+
+.carousel-indicators {
+    bottom: 10px; /* Adjust the position of the dots */
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Mobile-specific CSS for Carousel */
+@media (max-width: 768px) {
+    .carousel-inner img {
+        height: 180px; /* Reduced height for mobile */
+        object-fit: cover;
+    }
+
+    /* Adjust position of the indicators on mobile */
+    .carousel-indicators {
+        bottom: 5px; /* Reduce the gap for mobile */
+    }
+
+    /* Make the carousel indicator dots smaller on mobile */
+    .carousel-indicators [data-bs-target] {
+        width: 8px; /* Smaller dots for mobile */
+        height: 8px;
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+}
+
+
+.category-slider {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.category-container {
+    display: flex;
+    gap: 0; /* No space between items */
+    transition: transform 0.3s ease-in-out;
+    will-change: transform;
+}
+
+.category-item {
+    flex: 0 0 calc(100% / 6); /* Adjustable: 6 items visible by default */
+    max-width: calc(100% / 6);
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box; /* Ensure padding doesn't exceed container */
+}
+
+.category-item img {
+    width: 100%;
+    max-width: 160px;
+    max-height: 160px;
+    min-width: 160px;
+    min-height: 160px;
+    border-radius: 50%;
+}
+
+.slider-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.slider-nav:hover{
+    background-color: black;
+    color: white;
+}
+
+.slider-nav.prev {
+    left: 15px;
+}
+
+.slider-nav.next {
+    right: 15px;
+}
+
+.slider-nav:disabled {
+    opacity: 0.5;
+    background: rgba(0, 0, 0, 0.6);
+    cursor: not-allowed;
+}
+
+/* Mobile-specific CSS */
+@media (max-width: 768px) {
+    .category-item {
+        flex: 0 0 calc(100% / 3); /* Show 3 items per row on mobile */
+        max-width: calc(100% / 3);
+    }
+
+    .category-item img {
+        max-width: 100px; /* Adjust image size for mobile */
+        max-height: 100px;
+        min-width: 100px;
+        min-height: 100px;
+    }
+
+    /* Adjust button sizes and positions on mobile */
+    .slider-nav {
+        height: 30px;
+        width: 30px;
+        font-size: 14px;
+    }
+
+    .slider-nav.prev {
+        left: 10px;
+    }
+
+    .slider-nav.next {
+        right: 10px;
+    }
+}
+
+
+  .footer {
+    background-color: #000000;
+    color: white;
+    height: 400px;
+  }
+/* Parent container of the cards */
+/* Product Card */
+.product-card {
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 200px; /* Default width */
+    height: 320px; /* Default height */
+    z-index: 1;
+    border-radius: 10px;
+}
+
+/* Hover Effect */
+.product-card:hover {
+    transform: scale(1.1); /* Scale up the card */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow for better visibility */
+    z-index: 10; /* Ensure the card appears above others */
+}
+
+/* Image Section */
+.product-img-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.product-img {
+    min-height: 190px;
+    max-height: 190px;
+    max-width: 200px;
+    min-width: 200px;
+    object-fit: cover;
+}
+
+.discount-badge {
+    position: absolute;
+    top: 5px;
+    right: 12px;
+    background-color: #b40000;
+    color: #fff;
+    padding: 3px 6px;
+    font-size: 10px;
+    border-radius: 15px;
+}
+
+.cart-icon {
+    position: absolute;
+    bottom: 5px;
+    right: 12px;
+    font-size: 17px;
+    color: #555;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.cart-icon:hover {
+    color: #28a745;
+    transform: scale(1.1);
+}
+
+/* Title Section */
+.product-title {
+    font-size: 13px;
+    color: #000000;
+    padding: 3px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    height: 36px;
+    line-height: 1.2;
+}
+
+.product-rating {
+    margin-top: -10px;
+    margin-left: 8px;
+}
+
+.rating-count {
+    font-size: 11px;
+}
+
+.stars {
+    display: inline-flex;
+    align-items: center;
+}
+
+.star {
+    font-size: 13px; /* Adjust as needed */
+    color: #ffc107; /* Gold for full stars */
+    position: relative;
+}
+
+.star.half-star {
+    background: linear-gradient(90deg, #ffc107 50%, #e4e5e9 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.star.empty-star {
+    color: #e4e5e9; /* Grey for empty stars */
+}
+
+
+.custom-tooltip {
+    font-size: 10px; /* Smaller font size */
+    padding: 1.5px 5px; /* Adjust padding */
+}
+
+/* Pricing Section */
+.product-pricing {
+    margin-top: -6px;
+    display: flex;
+    padding: 0px 0px 0px 10px ;
+    justify-content: start;
+    gap: 15px;
+}
+
+.price {
+    font-size: 22px;
+    font-weight: 800;
+    color: #333;
+}
+
+.price-discount {
+    padding-top: 8px;
+    font-size: 14px;
+    color: #999;
+    text-decoration: line-through;
+}
+
+.preview-btn {
+    font-size: 12px;
+    color: white;
+    background-color: #000000;
+    /* padding: 5px 10px; */
+    height: 27px;
+    border-radius: 25px;
+}
+
+.preview-btn:hover {
+    color: white;
+    background-color: #000000;
+}
+
+.wishlist-icon {
+    font-size: 20px;
+    color: #000000;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.wishlist-icon:hover {
+    transform: scale(1.2);
+    color: #28a745;
+}
+
+.product-overlay {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 767px) {
+    .product-card {
+        /* width: 50%;  */
+    }
+
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .col-6 {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
